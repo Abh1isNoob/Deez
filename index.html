@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css"
+    <title>Deez</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="nav" id="nav">
+        <img src="deez.png" alt="img not found"class="nav__logo">
+    </div>
+
+
+    <!--header-->
+    <div class="banner">
+        <video src="finally.mp4" autoplay muted loop class="banner-video"></video>
+        <div class="banner__contents">
+            <h1 class ="banner__title">Vinland Saga</h1>
+            <div class="banner__description"><p style="font-size: 20px;">"You have no enemies, nobody does."</p></div>
+            <div class="banner__button">
+                <button class="banner__button">Play Now</button>
+                <button class="banner__button">Your List</button>
+            </div>
+        </div>
+        <div class = "banner__fadeBottom"></div> 
+    </div>
+    <div class = "heading">
+        <p style="color: rgb(12, 99, 220);text-align: center; font-size: 57px;">WELCOME🤖</p>
+        <p style="color: aliceblue;text-align:center;font-size: 27px;">Watch anime for absolutely free on Deez</p>
+    </div>
+    <!--Top Trending -->
+    <div class="row">
+        <br>
+        <h2 style="color: rgb(12, 99, 220);">Trending Now</h2>
+        <div class="row__posters">
+            
+            <img src="OnePiece.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="vinlandSAGA.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="DemonSlayer.webp" alt="" class="row__poster row__posterLarge">
+            <img src="AOTs4.webp" alt="" class="row__poster row__posterLarge">
+        </div>
+    </div>
+
+    <!--People also watch-->
+    <div class="row">
+        <h2 style="color: rgb(12, 99, 220);">People also watch</h2>
+        <div class="row__posters">
+            
+            <img src="MugenTrain.jpg" alt="" class="row__poster">
+            <img src="AOTs3.avif" alt="" class="row__poster">
+            <img src="AOTs1.avif" alt="" class="row__poster">
+            <img src="deathNOTE.jpg" alt="" class="row__poster">
+            <img src="Bleach.jpg" alt="" class="row__poster">
+            <img src="Berserk.jpg" alt="" class="row__poster">
+            <img src="NarutoShippu.jpg" alt="" class="row__poster">
+            <img src="JJKs1.jpg" alt="" class="row__poster">
+            <img src="Baki.jpeg" alt="" class="row__poster">
+            <img src="saitama.jpg" alt="" class="row__poster">
+            <img src="JJK2.webp" alt="" class="row__poster">
+            <img src="mobPsycho100.jpg" alt="" class="row__poster">
+            <img src="SpyXfamily.jpg" alt="" class="row__poster">
+            <img src="solo.webp" alt="" class="row__poster">
+            <img src="DBz.webp" alt="" class="row__poster">
+        </div>
+    </div>
+
+    <script>
+        const nav = document.getElementById('nav');
+
+        window.addEventListener('scroll',() => {
+            if(window.scrollY >= 100){
+                nav.classList.add('nav__black')
+            } else {
+                nav.classList.remove('nav__black')
+            }
+        })
+    </script>
+</body>
+</html>
